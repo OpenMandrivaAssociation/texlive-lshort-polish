@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /info/lshort/polish
+# catalog-date 2006-12-28 00:06:45 +0100
+# catalog-license pd
+# catalog-version undef
 Name:		texlive-lshort-polish
 Version:	20061228
 Release:	1
@@ -22,6 +28,7 @@ LaTeX2e.
 %doc %{_texmfdistdir}/doc/latex/lshort-polish/README
 %doc %{_texmfdistdir}/doc/latex/lshort-polish/lshort2e.pdf
 %doc %{_texmfdistdir}/doc/latex/lshort-polish/src.zip
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -32,3 +39,5 @@ LaTeX2e.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
