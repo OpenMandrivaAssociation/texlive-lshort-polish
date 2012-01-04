@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-lshort-polish
 Version:	20061228
-Release:	1
+Release:	2
 Summary:	Introduction to LaTeX in Polish
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/lshort/polish
