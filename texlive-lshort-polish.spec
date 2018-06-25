@@ -5,7 +5,7 @@
 # catalog-license pd
 # catalog-version undef
 Name:		texlive-lshort-polish
-Version:	20170414
+Version:	20180303
 Release:	1
 Summary:	Introduction to LaTeX in Polish
 Group:		Publishing
