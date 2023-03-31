@@ -1,6 +1,6 @@
 Name:		texlive-lshort-polish
 Version:	63289
-Release:	1
+Release:	2
 Summary:	Introduction to LaTeX in Polish
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/lshort/polish
