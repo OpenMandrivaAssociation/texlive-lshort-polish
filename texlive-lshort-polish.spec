@@ -3,7 +3,7 @@ Version:	63289
 Release:	2
 Summary:	Introduction to LaTeX in Polish
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/info/lshort/polish
+URL:		https://www.ctan.org/tex-archive/info/lshort/polish
 License:	PD
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lshort-polish.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lshort-polish.doc.r%{version}.tar.xz
