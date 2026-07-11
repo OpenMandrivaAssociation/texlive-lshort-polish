@@ -1,30 +1,20 @@
-Name:		texlive-lshort-polish
-Version:	63289
-Release:	2
+%global tl_name lshort-polish
+%global tl_revision 63289
+
+Name:		texlive-%{tl_name}
+Epoch:		1
+Version:	6.4PL1
+Release:	%{tl_revision}.1
 Summary:	Introduction to LaTeX in Polish
 Group:		Publishing
 URL:		https://www.ctan.org/tex-archive/info/lshort/polish
-License:	PD
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lshort-polish.r%{version}.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lshort-polish.doc.r%{version}.tar.xz
+License:	gpl2+
+Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/lshort-polish.r%{tl_revision}.tar.xz
+Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/lshort-polish.doc.r%{tl_revision}.tar.xz
 BuildArch:	noarch
-BuildRequires:	texlive-tlpkg
-Requires(pre):	texlive-tlpkg
+BuildSystem:	texlive
+Provides:	texlive(%{tl_name}) = %{tl_revision}
 
 %description
-This is the Polish translation of A Short Introduction to
-LaTeX2e.
+This is the Polish translation of A Short Introduction to LaTeX2e.
 
-#-----------------------------------------------------------------------
-%files
-%doc %{_texmfdistdir}/doc/latex/lshort-polish
-
-#-----------------------------------------------------------------------
-%prep
-%autosetup -p1 -c -a1
-
-%build
-
-%install
-mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar doc %{buildroot}%{_texmfdistdir}
